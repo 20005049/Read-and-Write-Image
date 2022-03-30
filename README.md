@@ -102,6 +102,6 @@ cv2.destroyAllWindows()
 
 
 ## Result:
-Thus the images are read, displayed, and written successfully using the python program.
+Thus the images are read, displayed, and written successfuLly using the python program.
 
 
