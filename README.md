@@ -1,10 +1,11 @@
+## EXP NO:01
+## DATE:
 # READ AND WRITE AN IMAGE
 ## AIM
 To write a python program using OpenCV to do the following image manipulations.
 i) Read, display, and write an image.
 ii) Access the rows and columns in an image.
 iii) Cut and paste a small portion of the image.
-
 ## Software Required:
 Anaconda - Python 3.7
 ## Algorithm:
@@ -23,60 +24,29 @@ End the program and close the output image windows.
 # Developed By:Sri Harish M
 # Register Number : 212220230047
 # To Read,display the image
-
 import numpy as np
 import cv2
 img = cv2.imread('tiger.jpg',1)
 cv2.imshow('Bike',img)
 cv2.waitKey(0)
-
-
-
-
-
-
 # To write the image
-
 cv2.imwrite('tiger1.jpg',img)
-
-
-
-
 # Find the shape of the Image
-
 print(img.shape)
-
-
-
 # To access rows and columns
-
 import random
 for i in range(100):
     for j in range(img.shape[1]):
         img[i][j]= [random.randint(0,255),random.randint(0,255),random.randint(0,255)]
 cv2.imshow('tiger',img)
 cv2.waitKey(0)
-
-
-
 # To cut and paste portion of image
-
 bw2=cv2.imread("tiger.jpg",1)
 tag=bw2[30:100,30:120]
 bw2[50:120,120:210]=tag
 cv2.imshow("cutting portion",bw2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
-
-
-
-
-
-
-
-
-
 ```
 ## Output:
 
